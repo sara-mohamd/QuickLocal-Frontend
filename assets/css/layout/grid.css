@@ -1,0 +1,42 @@
+/* ------------------   products --------------------- */
+/* apply three different styles*/
+@media (min-width: 550px) {
+  .products-container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.products-container .product-item {
+  grid-template-columns: 1fr;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.product-item img {
+  grid-column: 1;
+  
+  height: auto; 
+  border-radius: 5px;
+}
+
+.product-item h5, .product-item p {
+  margin: 10px 0;
+}
+
+.view-product-btn {
+  color: black;
+  text-decoration: none;
+  border: 1px solid #7184ed;
+  font-size: 18px;
+  padding: 10px 20px; 
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+}
