@@ -1,0 +1,15 @@
+/* typography.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px; /* Base font size */
+  line-height: 1.5; /* Line height for better readability */
+}
+
+h1 {
+  font-size: 2rem; /* Example: Larger heading size for mobile */
+}
+
+p {
+  font-size: 1rem; /* Example: Regular paragraph text size */
+}

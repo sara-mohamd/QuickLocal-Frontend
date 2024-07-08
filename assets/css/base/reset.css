@@ -1,0 +1,38 @@
+/* Reset box-sizing to border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption{
+  margin: 0;
+  padding: 0;
+}
+
+/* mobile default style */
+
+.products-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  margin-bottom: 3px;
+}
+.products-container .product-item {
+  border: solid 1px #ccc;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
