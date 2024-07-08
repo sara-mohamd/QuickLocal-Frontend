@@ -9,7 +9,7 @@
 
 body,
 h1,
-h2,
+h5,
 p,
 ul,
 ol,
@@ -29,10 +29,21 @@ figcaption{
   margin-bottom: 3px;
 }
 .products-container .product-item {
-  border: solid 1px #ccc;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  /* grid-template-rows: subgrid;
+  grid-row: span 3; */
   align-items: center;
   border-bottom: 1px solid #ccc;
+  padding: 3rem 0;
+}
+
+
+.products-container img {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.products-container .offers {
+  display: none;
 }
 
