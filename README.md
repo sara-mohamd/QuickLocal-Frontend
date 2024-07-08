@@ -1,2 +1,7 @@
 # QuickLocal-Frontend
-Web interface for the QuickLocal platform.
+This project contains the frontend code for QuickLocal
+
+## Pages
+## assets
+## JSON
+
