@@ -34,11 +34,18 @@ fetch("../../JSON/data.json")
 function displayProductDetails(product) {
   const productDetailContainer = document.getElementById('product-detail');
 
-  productDetailContainer.innerHTML = `
-    <img src="${product.imageUrl}" alt="${product.title}">
-    <h2>${product.title}</h2>
-    <p class="price">${product.price}</p>
-    ${product.offers ? `<p class="offers">Offers: ${product.offers}</p>` : ''}
-    <p class="description">${product.description}</p>
-  `;
+  if (productDetailContainer) {
+    productDetailContainer.innerHTML = `
+      <img src="${product.imageUrl}" alt="${product.title}">
+      <h2>${product.title}</h2>
+      <p class="source">Source: ${product.source}</p>
+      <p class="price">Price: ${product.price}</p>
+      <p class="delivery">Delivery: ${product.delivery}</p>
+      <p class="rating">Rating: ${product.rating} (${product.ratingCount} reviews)</p>
+      ${product.offers ? `<p class="offers">Offers: ${product.offers}</p>` : ''}
+    `;
+  } else {
+    console.error('Element with ID "product-detail" not found.');
+  }
 }
+
